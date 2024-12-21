@@ -26,7 +26,7 @@ export function UpdateInvoice({ id }: { id: string }) {
 }
 
 export function DeleteInvoice({ id }: { id: string }) {
-  const handleDelete = async (event) => {
+  const handleDelete = async (event: any) => {
     event.preventDefault(); // Prevent default form submission behavior
     await deleteInvoice(id); // Call the deleteInvoice function
   };
